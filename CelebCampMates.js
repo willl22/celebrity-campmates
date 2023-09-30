@@ -20,11 +20,36 @@ const createTeam = () => {
     
     Your ${randJob(jobs3)} is ${randName(names)}
     
-    What a team! Your chance of survival is:
-    ${randPerc()}%
     `);
-    
-
 };
 
+const calcSurvival = (perc) => {
+    if (perc > 75) {
+        console.log(`
+    What a team! Your chance of survival is:
+    ${perc}%
+    I like those odds!
+        `);
+    } else if (perc > 50) {
+        console.log(`
+    What a team! Your chance of survival is:
+    ${perc}%
+    Not bad, go for it!
+        `);
+    } else if (perc > 20) {
+        console.log(`
+    What a team! Your chance of survival is:
+    ${perc}%
+    You err... you got this...
+        `);
+    } else {
+        console.log(`
+    What a team! Your chance of survival is:
+    ${perc}%
+    Yikes...
+        `);
+    };
+}
+
 createTeam();
+calcSurvival(randPerc());
