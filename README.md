@@ -23,6 +23,3 @@ When you run the script locally in Node, it will look something like this:
 The script is a .js file which can be downloaded and opened in a text-editor. To run the script, use the command line to navigate to the directory where you've saved the file. Then type 
 `node CelebCampMates.js` and hit enter.
 
-#### Technologies:
-
-#### License:
